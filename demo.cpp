@@ -1,7 +1,7 @@
 #include <iostream>
 // 引入標準程式庫中相關的字串程式
 #include <string>
- 
+#include <cstdlib>   // system("pause")
 // std 為標準程式庫的名稱空間
 using namespace std;
  
@@ -17,7 +17,7 @@ int main(void)
     cout << endl;
     cout << m << endl;    
     cout << endl << endl;
-     
+    system("pause");
     return 0;
 }
  
