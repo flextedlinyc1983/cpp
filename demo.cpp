@@ -3,6 +3,10 @@
 #include <string>
 #include <cstdlib>   // system("pause")
 // std 為標準程式庫的名稱空間
+
+#include <cmath>
+#include <vector>
+
 using namespace std;
  
 int main(void)
@@ -19,6 +23,10 @@ int main(void)
     cout << endl << endl;
     system("pause");
     return 0;
+}
+
+void test(){
+    std::vector<double> mins;
 }
  
 /* 《程式語言教學誌》的範例程式
