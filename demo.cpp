@@ -56,8 +56,34 @@ struct MyStruct
     int member_a;
 };
 
+
+template <typename T> class Demo {
+    public:
+        Demo(const T &a, const T &b) {
+            this->a = a;
+            this->b = b;
+        } 
+         
+        T do_something() {
+            return a + b;
+        }
+     
+    private:
+        T a;
+        T b;
+};
+
 int main(void)
 {
+
+    Demo<int> d1(20, 25);
+    std::cout << d1.do_something() << std::endl;
+    Demo<double> d2(5.2, 3.95);
+    std::cout << d2.do_something() << std::endl;
+    Demo<char> d3('1', '1');
+    std::cout << d3.do_something() << std::endl;
+
+
     CWhale d(100);
     cout<< "The type of whale d is "<< d.getWhaleType(1,3)<< endl;
 
